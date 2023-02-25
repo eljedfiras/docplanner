@@ -1,0 +1,144 @@
+/* reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* set font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ebebeb;
+}
+
+header img {
+  height: 30px;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header li span {
+  color: #767676;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+header li span select {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  z-index: 10;
+  display: none;
+}
+
+header li span:hover select {
+  display: block;
+}
+
+header li span select option {
+  padding: 10px;
+}
+
+/* main styles */
+main {
+  padding: 50px;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section1 img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.section1 p {
+  color: #767676;
+}
+
+.section2 {
+  color: #767676;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.section2 p:last-child {
+  margin-bottom: 0;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec3-div1,
+.sec3-div2,
+.sec3-div3 {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.sec3-div1 img,
+.sec3-div2 img,
+.sec3-div3 img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.sec3-div1 h2,
+.sec3-div2 h2,
+.sec3-div3 h2 {
+  color: #00b39b;
+  margin-bottom: 10px;
+}
+
+.sec3-div1 p,
+.sec3-div2 p,
+.sec3-div3 p {
+  color: #767676;
+  margin-bottom: 20px;
+}
+
+.country select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  color: #767676;
+  cursor: pointer;
+}
+
+.country select option {
+  padding: 10px;
+}
